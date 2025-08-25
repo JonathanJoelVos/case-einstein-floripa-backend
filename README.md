@@ -13,6 +13,10 @@ API em **Express** responsável por:
 
 ---
 
+# Base URL
+
+https://case-einstein-floripa-backend.onrender.com
+
 ## Sumário
 
 1. [Rotas](#rotas)
