@@ -1,7 +1,7 @@
 
 ---
 
-# Einstein Floripa — Backend (API)
+# Case Einstein Floripa — Backend (API)
 
 API em **Express** responsável por:
 
@@ -10,8 +10,6 @@ API em **Express** responsável por:
 * **extrair dados com IA (Gemini)**,
 * persistir **análise**,
 * expor **listas**, **sumários** e **séries temporais** para o painel.
-
-Base das rotas: normalmente a API foi montada em `/api` (ex.: `/api/resumes/upload`).
 
 ---
 
@@ -292,7 +290,7 @@ No front, o link final fica:
 1. **Clonar e instalar**
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/JonathanJoelVos/case-einstein-floripa-backend.git
 cd case-einstein-back
 npm i
 ```
