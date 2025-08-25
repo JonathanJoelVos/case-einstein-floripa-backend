@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Resume {
+  id        String   @id @default(cuid())
+  url       String   @unique
+  fileName  String
+  fileType  String
+  createdAt DateTime @default(now())
+
+  analysis ResumeAnalysis?
+}
+
+model ResumeAnalysis {
+  id                      String   @id @default(cuid())
+  resumeId                String   @unique
+  name                    String?
+  email                   String?
+  phone                   String?
+  areas                   String[]
+  cultureScore            Float
+  realExperience          Boolean
+  createdAt               DateTime @default(now())
+  cultureScoreDescription String?
+  summary                 String?
+
+  resume Resume @relation(fields: [resumeId], references: [id])
+
+  @@index([createdAt])
+}
