@@ -371,6 +371,7 @@ npm run dev
 > ```
 
 ---
+Feito com 💙 por Jojo :)
 
 ## Variáveis de ambiente
 
